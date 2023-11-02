@@ -3,12 +3,17 @@
  *
  * The runner for the PhraseSolverGame
  */
-public class Runner
-{
-  public static void main(String[] args) 
-  {
-    PhraseSolver p = new PhraseSolver(); 
+
+/**
+ * @author Franklin Liu
+ * @author Leo Zhu
+ * @version 1.0
+ * @since 1.0
+ **/
+public class Runner {
+  public static void main(String[] args) {
+    PhraseSolver p = new PhraseSolver();
     p.play();
   }
 
-} 
+}

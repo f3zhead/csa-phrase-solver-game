@@ -1,9 +1,16 @@
+/** 
+ * @author Franklin Liu
+ * @author Leo Zhu
+ * @version 1.0
+ * @since 1.0
+ * **/
 
 /*
  * Activity 2.5.2
  *
  * A Board class the PhraseSolverGame
  */
+
 import java.util.Scanner;
 import java.io.File;
 
@@ -97,14 +104,19 @@ public class Board {
   }
 
   public boolean guessLetter(String guess) {
+    // initialize foundLetter
     boolean foundLetter = false;
+    // initialize String that represents the new solved phrase
     String newSolvedPhrase = "";
 
+    // loop through each letter in the phrase
     for (int i = 0; i < phrase.length(); i++) {
+      // letter is in phrase, add to newSolvedPhrase
       if (phrase.substring(i, i + 1).equals(guess)) {
         newSolvedPhrase += guess + " ";
         foundLetter = true;
       } else {
+        // letter is not in phrase, add underscore and space
         newSolvedPhrase += solvedPhrase.substring(i * 2, i * 2 + 1) + " ";
       }
     }

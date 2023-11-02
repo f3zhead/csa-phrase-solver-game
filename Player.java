@@ -6,6 +6,13 @@
  */
 import java.util.Scanner;
 
+/**
+ * @author Franklin Liu
+ * @author Leo Zhu
+ * @version 1.0
+ * @since 1.0
+ **/
+
 public class Player {
   /* your code here - attributes */
   private String name;
