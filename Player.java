@@ -20,6 +20,7 @@ public class Player {
     System.out.println("Welcome " + this.name);
     this.points = 0;
 
+    in.close();
   }
 
   public Player(String inputName) {
@@ -30,6 +31,20 @@ public class Player {
   }
 
   /* your code here - accessor(s) */
+  public String getName() {
+    return name;
+  }
+
+  public int getPoints() {
+    return points;
+  }
 
   /* your code here - mutator(s) */
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setPoints(int points) {
+    this.points = points;
+  }
 }

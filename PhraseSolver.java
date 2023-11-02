@@ -22,8 +22,30 @@ public class PhraseSolver {
   }
 
   /* your code here - accessor(s) */
+  public Player getPlayer1() {
+  }
+
+  public Player getPlayer2() {
+  }
+
+  public Board getBoard() {
+  }
+
+  public bool getSolved() {
+  }
 
   /* your code here - mutator(s) */
+  public void setPlayer1(Player player) {
+  }
+
+  public void setPlayer2(Player player) {
+  }
+
+  public void setBoard(Board board) {
+  }
+
+  public void setSolved(bool solved) {
+  }
 
   public void play() {
     boolean solved = false;

@@ -23,8 +23,24 @@ public class Board {
   }
 
   /* your code here - accessor(s) */
+  public String getSolvedPhrase() {
+  }
+
+  public String getPhrase() {
+  }
+
+  public int getCurrentLetterValue() {
+  }
 
   /* your code here - mutator(s) */
+  public void setSolvedPhrase(String solvedPhrase) {
+  }
+
+  public void setPhrase(String phrase) {
+  }
+
+  public void setCurrentLetterValue(int currentLetterValue) {
+  }
 
   /* ---------- provided code, do not modify ---------- */
   public void setLetterValue() {
