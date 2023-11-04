@@ -15,5 +15,4 @@ public class Runner {
     PhraseSolver p = new PhraseSolver();
     p.play();
   }
-
 }

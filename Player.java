@@ -22,12 +22,11 @@ public class Player {
   public Player() {
     System.out.print("Enter your name: ");
     Scanner in = new Scanner(System.in);
-    this.name = in.nextLine();
+    this.name = in.nextLine().strip();
 
     System.out.println("Welcome " + this.name);
     this.points = 0;
 
-    in.close();
   }
 
   public Player(String inputName) {

@@ -26,17 +26,19 @@ public class Board {
     this.phrase = loadPhrase();
     setLetterValue();
 
-    System.out.println("Phrase: " + phrase); // temp test code
   }
 
   /* your code here - accessor(s) */
   public String getSolvedPhrase() {
+    return this.solvedPhrase;
   }
 
   public String getPhrase() {
+    return phrase;
   }
 
   public int getCurrentLetterValue() {
+    return currentLetterValue;
   }
 
   /* your code here - mutator(s) */
@@ -99,7 +101,6 @@ public class Board {
         solvedPhrase += "_ ";
       }
     }
-
     return tempPhrase;
   }
 
