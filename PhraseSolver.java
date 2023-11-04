@@ -68,16 +68,18 @@ public class PhraseSolver {
       } else {
         if (this.board.isSolved(guess)) {
           System.out.println("You did it!");
+          break;
         }
         currentPlayer.setPoints(currentPlayer.getPoints() + 5);
       }
-      if (this.board.getSolvedPhrase().equals(guess)) {
+      if (!(this.board.getSolvedPhrase().contains("_"))) {
         solved = true;
         break;
       }
       curPlayerNum = ((curPlayerNum + 1) % 2);
 
     }
+    System.out.println("The phrase was: " + this.board.getPhrase());
     System.out.println(currentPlayer.getName() + " won with " + currentPlayer.getPoints() + " points!");
 
   }
